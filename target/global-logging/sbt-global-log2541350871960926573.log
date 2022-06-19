@@ -1,0 +1,14 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\scala\io\bactery\eclc\models\IPs.scala:8:23: Unused import
+[error] import org.http4s.Uri.Path
+[error]                       ^
+[error] C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\scala\io\bactery\eclc\models\IPs.scala:40:11: local val add in method get is never used
+[error]       val add = if (address == "127.0.0.1") "81.64.18.84" else address
+[error]           ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed Jun 19, 2022 7:08:59 PM
+[debug] > Exec(idea-shell, None, None)

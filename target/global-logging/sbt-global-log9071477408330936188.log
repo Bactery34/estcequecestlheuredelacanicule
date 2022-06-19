@@ -1,0 +1,23 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:3:33: Unused import
+[error] import cats.effect.{Concurrent, Resource}
+[error]                                 ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:34:9: private val dsl in <$anon: io.bactery.templateproject.Pokemons[F]> is never used
+[error]     val dsl = new Http4sClientDsl[F]{}
+[error]         ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectServer.scala:3:28: Unused import
+[error] import cats.effect.{Async, Resource}
+[error]                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectServer.scala:5:25: Unused import
+[error] import com.comcast.ip4s._
+[error]                         ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectServer.scala:8:32: Unused import
+[error] import org.http4s.ember.server.EmberServerBuilder
+[error]                                ^
+[error] 5 errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed May 15, 2022 10:45:54 PM
+[debug] > Exec(idea-shell, None, None)

@@ -1,0 +1,42 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:8:24: value contextShift is not a member of object cats.effect.IO
+[error]  Note: implicit value cs is not applicable here because it comes after the application point and it lacks an explicit result type
+[error]   implicit val cs = IO.contextShift(scala.concurrent.ExecutionContext.global)
+[error]                        ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:10:32: not found: type HikariTransactor
+[error]   val transactor: Resource[IO, HikariTransactor[IO]] = {
+[error]                                ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:12:14: not found: value ExecutionContexts
+[error]       ecd <- ExecutionContexts.fixedThreadPool[IO](10) // our connect EC
+[error]              ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:13:13: not found: value Blocker
+[error]       be <- Blocker[IO]    // our blocking EC
+[error]             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:14:13: not found: value HikariTransactor
+[error]       xa <- HikariTransactor.newHikariTransactor[IO](
+[error]             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:25:12: not found: value Transactor
+[error]   val xa = Transactor.fromDriverManager[IO](
+[error]            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:30:5: not found: value Blocker
+[error]     Blocker.liftExecutionContext(ExecutionContexts.synchronous) // just for testing
+[error]     ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:30:34: not found: value ExecutionContexts
+[error]     Blocker.liftExecutionContext(ExecutionContexts.synchronous) // just for testing
+[error]                                  ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\DoobieDatabase.scala:6:23: parameter value databaseConfig in class DoobieDatabase is never used
+[error] class DoobieDatabase (databaseConfig: DatabaseConfig) {
+[error]                       ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\config\DatabaseConfig.scala:3:19: Unused import
+[error] import pureconfig._
+[error]                   ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\db\config\DatabaseConfig.scala:4:32: Unused import
+[error] import pureconfig.generic.auto._
+[error]                                ^
+[error] 11 errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed Apr 25, 2022 7:07:25 AM
+[debug] > Exec(idea-shell, None, None)

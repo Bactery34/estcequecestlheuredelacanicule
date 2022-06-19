@@ -1,0 +1,19 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[info] done compiling
+[info] compiling 2 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:42:24: value name is not a member of io.bactery.templateproject.Pokemons.Pokemon
+[error]             (${pokemon.name})
+[error]                        ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:49:33: value name is not a member of io.bactery.templateproject.Pokemons.Pokemon
+[error]          | SET name = ${pokemon.name}
+[error]                                 ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:50:35: value name is not a member of io.bactery.templateproject.Pokemons.Pokemon
+[error]          | WHERE name = ${pokemon.name}
+[error]                                   ^
+[error] three errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 8 s, completed May 15, 2022 12:39:46 PM
+[debug] > Exec(idea-shell, None, None)

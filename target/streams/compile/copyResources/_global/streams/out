@@ -1,0 +1,4 @@
+[debug] Copy resource mappings: 
+[debug] 	(C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\resources\application.conf,C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes\application.conf)
+[debug] 	(C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\resources\logback.xml,C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes\logback.xml)
+[debug] 	(C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\resources\META-INF\native-image\io\bactery\templateproject\reflect-config.json,C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes\META-INF\native-image\io\bactery\templateproject\reflect-config.json)

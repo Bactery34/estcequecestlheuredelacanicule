@@ -1,0 +1,20 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:3:33: Unused import
+[error] import cats.effect.{Concurrent, IO}
+[error]                                 ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:8:29: Unused import
+[error] import org.http4s.implicits._
+[error]                             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:12:26: Unused import
+[error] import org.http4s.Method._
+[error]                          ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:46:16: Unused import
+[error]     import dsl._
+[error]                ^
+[error] four errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed Jan 10, 2022 10:08:04 PM
+[debug] > Exec(idea-shell, None, None)

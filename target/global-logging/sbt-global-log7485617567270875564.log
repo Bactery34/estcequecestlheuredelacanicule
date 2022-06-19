@@ -1,0 +1,10 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 8 Scala sources to C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\scala\io\bactery\eclc\ECQLCRoutes.scala:16:18: local val ipCache in method weatherRoutes is never used
+[error]     implicit val ipCache: Cache[IP] = CaffeineCache[IP]
+[error]                  ^
+[error] C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\scala\io\bactery\eclc\ECQLCRoutes.scala:17:18: local val weatherCache in method weatherRoutes is never used
+[error]     implicit val weatherCache: Cache[Weather] = CaffeineCache[Weather]
+[error]                  ^

@@ -1,0 +1,91 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 12 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectServer.scala:7:44: Unused import
+[error] import io.bactery.templateproject.Pokemons.Pokemon
+[error]                                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:5:35: object Pokemon is not a member of package io.bactery.templateproject
+[error] did you mean Pokemons?
+[error] import io.bactery.templateproject.Pokemon.Pokemon
+[error]                                   ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:8:19: class Inject is abstract; cannot be instantiated
+[error] class PokemonDAO @Inject()(doobieDatabase: DoobieDatabase) {
+[error]                   ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:12:46: not found: type Pokemon
+[error]   def get(name: String): ConnectionIO[Option[Pokemon]] = {
+[error]                                              ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:53:14: not found: type Pokemon
+[error]       .query[Pokemon]
+[error]              ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:20:22: not found: type Pokemon
+[error]   def create(entity: Pokemon): ConnectionIO[Either[Unit, Int]] = {
+[error]                      ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:56:28: not found: type Pokemon
+[error]   def createQuery(pokemon: Pokemon) = {
+[error]                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:25:27: type mismatch;
+[error]  found   : cats.effect.IO[Either[Unit.type,Int]]
+[error]  required: doobie.ConnectionIO[Either[Unit,Int]]
+[error]     (which expands to)  cats.free.Free[doobie.free.connection.ConnectionOp,Either[Unit,Int]]
+[error]     }.attemptSomeSqlState {
+[error]                           ^
+[info] cats.effect.IO[Either[Unit.type,Int]] <: doobie.ConnectionIO[Either[Unit,Int]]?
+[info] false
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:30:22: not found: type Pokemon
+[error]   def update(entity: Pokemon): ConnectionIO[Unit] = {
+[error]                      ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:65:28: not found: type Pokemon
+[error]   def updateQuery(pokemon: Pokemon) = {
+[error]                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:35:11: type mismatch;
+[error]  found   : Unit.type
+[error]  required: Int => ?
+[error]     }.map(Unit)
+[error]           ^
+[info] Unit.type <: Int => ??
+[info] false
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:43:11: type mismatch;
+[error]  found   : Unit.type
+[error]  required: Int => ?
+[error]     }.map(Unit)  }
+[error]           ^
+[info] Unit.type <: Int => ??
+[info] false
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:5:43: Unused import
+[error] import io.bactery.templateproject.Pokemon.Pokemon
+[error]                                           ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:13:22: parameter value xa in anonymous function is never used
+[error]     transactor.use { xa =>
+[error]                      ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\FunctorTest.scala:10:13: not found: type Try
+[error]   val aTry: Try[Int] = Success(42)
+[error]             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\FunctorTest.scala:10:24: not found: value Success
+[error]   val aTry: Try[Int] = Success(42)
+[error]                        ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\FunctorTest.scala:19:33: not found: type Try
+[error]   def do10xTry(aTry: Try[Int]): Try[Int] = aTry.map(_ * 10)
+[error]                                 ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\FunctorTest.scala:19:22: not found: type Try
+[error]   def do10xTry(aTry: Try[Int]): Try[Int] = aTry.map(_ * 10)
+[error]                      ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\MonadTest.scala:124:52: discarded non-Unit value
+[error]     numbers2.flatMap(incrementer).flatMap(doubler) == numbers2.flatMap(x => incrementer(x).flatMap(doubler))
+[error]                                                    ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\MonadTest.scala:74:13: local val vatIncludedPrice in value $anonfun is never used
+[error]         val vatIncludedPrice = p * 1.19
+[error]             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\MonadTest.scala:73:28: pattern var sku in value $anonfun is never used: use a wildcard `_` or suppress this warning with `sku@_`
+[error]       case Success(Product(sku, p)) =>
+[error]                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\MonadTest.scala:59:15: parameter value url in method getUser is never used
+[error]   def getUser(url: String): Future[User] = Future {
+[error]               ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\test\MonadTest.scala:63:20: parameter value userId in method getLastOrder is never used
+[error]   def getLastOrder(userId: String): Future[Product] = Future {
+[error]                    ^
+[error] 23 errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 7 s, completed May 14, 2022 1:53:26 PM
+[debug] > Exec(idea-shell, None, None)

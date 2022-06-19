@@ -1,0 +1,11 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:5:36: Unused import
+[error] import io.circe.{Decoder, Encoder, Json}
+[error]                                    ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed Feb 2, 2022 10:30:50 PM
+[debug] > Exec(idea-shell, None, None)

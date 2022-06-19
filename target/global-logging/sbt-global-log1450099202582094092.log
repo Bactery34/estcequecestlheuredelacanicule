@@ -1,0 +1,45 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:26:13: 
+[error] Cannot find or construct a Read instance for type:
+[error] 
+[error]   io.bactery.templateproject.models.Pokemons.Pokemon
+[error] 
+[error] This can happen for a few reasons, but the most common case is that a data
+[error] member somewhere within this type doesn't have a Get instance in scope. Here are
+[error] some debugging hints:
+[error] 
+[error] - For Option types, ensure that a Read instance is in scope for the non-Option
+[error]   version.
+[error] - For types you expect to map to a single column ensure that a Get instance is
+[error]   in scope.
+[error] - For case classes, HLists, and shapeless records ensure that each element
+[error]   has a Read instance in scope.
+[error] - Lather, rinse, repeat, recursively until you find the problematic bit.
+[error] 
+[error] You can check that an instance exists for Read in the REPL or in your code:
+[error] 
+[error]   scala> Read[Foo]
+[error] 
+[error] and similarly with Get:
+[error] 
+[error]   scala> Get[Foo]
+[error] 
+[error] And find the missing instance and construct it as needed. Refer to Chapter 12
+[error] of the book of doobie for more information.
+[error]       .query[Pokemon]
+[error]             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\PokemonDAO.scala:42:5: type mismatch;
+[error]  found   : Seq[String]
+[error]  required: doobie.syntax.SqlInterpolator.SingleFragment[_]; incompatible interpolation method sql
+[error]     sql"""UPDATE pokemons
+[error]     ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\models\Pokemons.scala:6:25: Unused import
+[error] import io.circe.Decoder.Result
+[error]                         ^
+[error] three errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 4 s, completed May 20, 2022 8:44:39 AM
+[debug] > Exec(idea-shell, None, None)

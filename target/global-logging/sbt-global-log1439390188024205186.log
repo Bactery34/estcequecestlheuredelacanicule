@@ -1,0 +1,18 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:22:37: type mismatch;
+[error]  found   : F[org.http4s.Response[F]]
+[error]  required: org.http4s.Response[F]
+[error]             case Left(_) => Conflict("Pokemon already created")
+[error]                                     ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:23:32: type mismatch;
+[error]  found   : F[org.http4s.Response[F]]
+[error]  required: org.http4s.Response[F]
+[error]             case Right(_) => Ok(pokemon)
+[error]                                ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed May 20, 2022 8:02:24 AM
+[debug] > Exec(idea-shell, None, None)

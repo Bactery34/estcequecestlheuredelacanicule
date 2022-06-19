@@ -1,0 +1,11 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\dao\impl\PokemonDoobieDAO.scala:3:29: Unused import
+[error] import cats.data.Validated.{Invalid, Valid}
+[error]                             ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 8 s, completed Jun 1, 2022 2:39:13 PM
+[debug] > Exec(idea-shell, None, None)

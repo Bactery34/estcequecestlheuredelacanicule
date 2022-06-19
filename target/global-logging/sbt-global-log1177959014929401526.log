@@ -1,0 +1,16 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:50:51: type mismatch;
+[error]  found   : String
+[error]  required: Throwable
+[error]         .adaptError { case t => PokemonError(test.toString) } // Prevent Client Json Decoding Failure Leaking
+[error]                                                   ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:50:28: pattern var t in method applyOrElse is never used: use a wildcard `_` or suppress this warning with `t@_`
+[error]         .adaptError { case t => PokemonError(test.toString) } // Prevent Client Json Decoding Failure Leaking
+[error]                            ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 6 s, completed Feb 2, 2022 10:24:48 PM
+[debug] > Exec(idea-shell, None, None)

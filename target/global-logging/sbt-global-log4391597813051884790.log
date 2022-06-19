@@ -1,0 +1,11 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources to C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\estcequecestlacanicule\src\main\scala\io\bactery\eclc\services\WeatherService.scala:3:13: Unused import
+[error] import cats.Functor
+[error]             ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 1 s, completed Jun 19, 2022 1:13:58 PM
+[debug] > Exec(idea-shell, None, None)

@@ -1,0 +1,51 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:18:48: overloaded method andThen with alternatives:
+[error]   [C](k: cats.data.Kleisli[F,(Option[io.bactery.templateproject.models.Pokemons.Pokemon], String),C])(implicit F: cats.FlatMap[F]): cats.data.Kleisli[F,String,C] <and>
+[error]   [C](f: ((Option[io.bactery.templateproject.models.Pokemons.Pokemon], String)) => F[C])(implicit F: cats.FlatMap[F]): cats.data.Kleisli[F,String,C]
+[error]  cannot be applied to (F[(Option[io.bactery.templateproject.models.Pokemons.Pokemon], String)] => F[io.bactery.templateproject.models.Pokemons.Pokemon])
+[error]         val test = Kleisli(pokemonService.get).andThen(pokemonService.checkIfExists)//andThen pokemonService.checkIfExists andThen pokemonService.create
+[error]                                                ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:22:18: pattern type is incompatible with expected type;
+[error]  found   : None.type
+[error]  required: (Option[io.bactery.templateproject.models.Pokemons.Pokemon], String)
+[error]             case None => P.get(name)
+[error]                  ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:23:18: constructor cannot be instantiated to expected type;
+[error]  found   : Some[A]
+[error]  required: (Option[io.bactery.templateproject.models.Pokemons.Pokemon], String)
+[error]             case Some(p) => p.pure[F]
+[error]                  ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:25:44: type mismatch;
+[error]  found   : Any
+[error]  required: io.bactery.templateproject.models.Pokemons.Pokemon
+[error]           created <- pokemonService.create(pokemon)
+[error]                                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:28:32: Cannot convert from Any to an Entity, because no EntityEncoder[F, Any] instance could be found.
+[error]             case Right(_) => Ok(pokemon)
+[error]                                ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:18:13: local val test in method applyOrElse is never used
+[error]         val test = Kleisli(pokemonService.get).andThen(pokemonService.checkIfExists)//andThen pokemonService.checkIfExists andThen pokemonService.create
+[error]             ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\services\impl\PokemonServiceImpl.scala:23:76: missing parameter type
+[error]   override def checkIfExists:F[(Option[Pokemon], String)] => F[Pokemon] = (maybePokemon, name) =>
+[error]                                                                            ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\services\impl\PokemonServiceImpl.scala:23:90: missing parameter type
+[error]   override def checkIfExists:F[(Option[Pokemon], String)] => F[Pokemon] = (maybePokemon, name) =>
+[error]                                                                                          ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\services\impl\PokemonServiceImpl.scala:12:23: Unused import
+[error] import cats.implicits._
+[error]                       ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\services\impl\PokemonServiceImpl.scala:14:30: parameter value evidence$1 in class PokemonServiceImpl is never used
+[error] class PokemonServiceImpl[F[_]: Sync](pokemons: Pokemons[F], pokemonDAO: PokemonDAO[F]) extends PokemonService[F] {
+[error]                              ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\services\impl\PokemonServiceImpl.scala:14:38: parameter value pokemons in class PokemonServiceImpl is never used
+[error] class PokemonServiceImpl[F[_]: Sync](pokemons: Pokemons[F], pokemonDAO: PokemonDAO[F]) extends PokemonService[F] {
+[error]                                      ^
+[error] 11 errors found
+[debug] Forcing garbage collection...
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 3 s, completed May 22, 2022 11:53:09 PM
+[debug] > Exec(idea-shell, None, None)

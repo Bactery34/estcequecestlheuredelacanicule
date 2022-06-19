@@ -1,0 +1,11 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\TemplateprojectRoutes.scala:21:30: value p of type io.bactery.templateproject.models.Pokemons.Pokemon does not take type parameters.
+[error]             case Some(p) => p[F]
+[error]                              ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed May 22, 2022 10:06:27 PM
+[debug] > Exec(idea-shell, None, None)

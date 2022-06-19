@@ -1,0 +1,14 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\BitBucket\scala\http4s\template-project\target\scala-2.13\classes ...
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:3:33: Unused import
+[error] import cats.effect.{Concurrent, IO}
+[error]                                 ^
+[error] C:\BitBucket\scala\http4s\template-project\src\main\scala\io\bactery\templateproject\Pokemons.scala:44:30: parameter value C in method impl is never used
+[error]   def impl[F[_]: Concurrent](C: Client[F]): Pokemons[F] = new Pokemons[F]{
+[error]                              ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed Jan 10, 2022 9:58:42 PM
+[debug] > Exec(idea-shell, None, None)
