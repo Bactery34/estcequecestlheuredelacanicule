@@ -1,38 +1,44 @@
-[debug] Created transactional ClassFileManager with tempDir = C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes.bak
-[debug] About to delete class files:
-[debug] 	WeatherService$.class
-[debug] 	WeatherService$$anon$1.class
-[debug] 	WeatherService.class
-[debug] We backup class files:
-[debug] 	WeatherService$.class
-[debug] 	WeatherService$$anon$1.class
-[debug] 	WeatherService.class
-[debug] Registering generated classes:
-[debug] 	WeatherService$$anon$1.class
-[debug] 	WeatherService.class
-[debug] 	WeatherService$.class
+[debug] Created transactional ClassFileManager with tempDir = C:\BitBucket\scala\http4s\estcequecestlheuredelacanicule\target\scala-2.13\classes.bak
 [debug] About to delete class files:
 [debug] 	ECQLCRoutes$.class
 [debug] 	ECQLCServer$.class
+[debug] 	WeatherService$.class
 [debug] 	ECQLCServer.class
+[debug] 	IPService$$anon$1.class
+[debug] 	IPService$.class
 [debug] 	ECQLCServer$anon$exportedReader$macro$20$1.class
 [debug] 	ECQLCRoutes$$anon$1.class
+[debug] 	WeatherService$$anon$1.class
 [debug] 	ECQLCRoutes$$anonfun$weatherRoutes$1.class
 [debug] 	ECQLCRoutes.class
+[debug] 	WeatherService.class
+[debug] 	IPService.class
 [debug] We backup class files:
 [debug] 	ECQLCRoutes$.class
 [debug] 	ECQLCServer$.class
+[debug] 	WeatherService$.class
 [debug] 	ECQLCServer.class
+[debug] 	IPService$$anon$1.class
+[debug] 	IPService$.class
 [debug] 	ECQLCServer$anon$exportedReader$macro$20$1.class
 [debug] 	ECQLCRoutes$$anon$1.class
+[debug] 	WeatherService$$anon$1.class
 [debug] 	ECQLCRoutes$$anonfun$weatherRoutes$1.class
 [debug] 	ECQLCRoutes.class
+[debug] 	WeatherService.class
+[debug] 	IPService.class
 [debug] Registering generated classes:
 [debug] 	ECQLCRoutes$.class
 [debug] 	ECQLCServer$.class
+[debug] 	WeatherService$.class
 [debug] 	ECQLCServer.class
+[debug] 	IPService$$anon$1.class
+[debug] 	IPService$.class
 [debug] 	ECQLCServer$anon$exportedReader$macro$20$1.class
 [debug] 	ECQLCRoutes$$anon$1.class
+[debug] 	WeatherService$$anon$1.class
 [debug] 	ECQLCRoutes$$anonfun$weatherRoutes$1.class
 [debug] 	ECQLCRoutes.class
-[debug] Removing the temporary directory used for backing up class files: C:\BitBucket\scala\http4s\estcequecestlacanicule\target\scala-2.13\classes.bak
+[debug] 	WeatherService.class
+[debug] 	IPService.class
+[debug] Removing the temporary directory used for backing up class files: C:\BitBucket\scala\http4s\estcequecestlheuredelacanicule\target\scala-2.13\classes.bak

@@ -35,7 +35,8 @@ lazy val root = (project in file("."))
       "org.tpolecat" %% "doobie-specs2"    % doobieVersion % "test", // Specs2 support for typechecking statements.
       "org.tpolecat" %% "doobie-scalatest" % doobieVersion % "test",  // ScalaTest support for typechecking statements.
       "com.github.pureconfig" %% "pureconfig" % "0.17.1",
-      "com.github.cb372" %% "scalacache-caffeine" % "0.28.0"
+      "com.github.cb372" %% "scalacache-caffeine" % "1.0.0-M6",
+      "com.beachape" %% "enumeratum" % "1.7.0"
     ),
     addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.13.0" cross CrossVersion.full),
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
